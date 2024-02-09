@@ -16,9 +16,9 @@ function createPromises(event) {
     const promise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (stateValue === 'fulfilled') {
-                resolve(`✅ Вдало виконаний проміс за ${delayValue} мс`);
+                resolve(`✅ Fulfilled promise in ${delayValue} ms`);
             } else {
-                reject(`❌ Невдало виконаний проміс за ${delayValue} мс`);
+                reject(`❌ Rejected promise in ${delayValue} ms`);
             }
         }, delayValue);
     });
