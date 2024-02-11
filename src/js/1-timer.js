@@ -23,7 +23,6 @@ const options = {
     if (selectedDates[0] > Date.now()) {
       userSelectedDate = selectedDates[0];
       startButton.disabled = false;
-      updateTimerDisplay(); // Calling the function to display the timer when a date is selected
       iziToast.success({
         title: 'Success',
     });
